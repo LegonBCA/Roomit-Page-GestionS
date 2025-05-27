@@ -1,0 +1,37 @@
+{
+  "canisters": {
+    "Z3-VB-backend": {
+      "main": "src/Z3-VB-backend/main.mo",
+      "type": "motoko"
+    },
+    "Z3-VB-frontend": {
+      "dependencies": [
+        "Z3-VB-backend"
+      ],
+      "source": [
+        "src/Z3-VB-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Z3-VB-frontend"
+    },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

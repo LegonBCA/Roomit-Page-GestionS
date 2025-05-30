@@ -1,18 +1,17 @@
-
-
-
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoginPage from "./pages/LoginPage.jsx";
 
 
 function App() {
-  
-
   return (
-    <div>
-      <h1>Hola Mundo</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        {/* Más rutas para dashboards */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+

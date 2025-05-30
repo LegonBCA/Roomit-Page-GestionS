@@ -1,137 +1,54 @@
-body {
-  color:  rgb(0, 0, 0);
-  margin: 0;
-  padding: 0;
-  background: 
-    linear-gradient(to bottom, rgba(71, 1, 233, 0.562), #ffffff00),
-    url('Isotipo Z3.png') center/contain no-repeat;background-size: 65%;
+.login-container {
   min-height: 100vh;
-  position: relative;
-}
-
-body::before {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7); 
-  z-index: -1;
-}
-
-
-////////////////////////////////////////////////////////////////////////////
-.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
-  width: 100vw; 
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  z-index: 1000;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.664), rgba(71, 1, 233, 0.425));
-
-  
+  background: linear-gradient(to bottom, rgba(71, 1, 233, 0.562), #ffffff00);
+  font-family: 'Arial', sans-serif;
 }
 
-.header-logo img {
-  height: 30px;
-  width: auto; 
+.login-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.login-logo {
+  width: 80px;
+  margin: 0 auto 1rem;
+}
+
+.login-title {
+  font-size: 1.75rem;
+  color: #4f46e5; // Indigo
+  font-weight: bold;
+  margin-bottom: 0.25rem;
 }
 
 .login-button {
-  position: fixed;
-  right: 1%;
-  padding: 0.75rem 1.5rem;
-  background-color: #000000; 
+  width: 100%;
+  background-color: #4f46e5;
   color: white;
-  border: none;
-  border-radius: 10px;
   font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s;
 }
 
 .login-button:hover {
-  background-color: #0bff02; 
+  background-color: #4338ca; // Indigo oscuro
 }
 
-
-
-//////////////////////////// Transfer ////////////////////////////////////
-
-.transfer-container {
-  max-width: 550px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid rgba(221, 221, 221, 0.5);
-  border-radius: 8px;
-  font-family: Arial, sans-serif;
-  
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); 
-  background-color: rgba(255, 255, 255, 0.7); 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.input-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-button:disabled {
-  background-color: #cccccc;
-}
-
-.separator {
-  height: 1px;
-  background-color: #eee;
-  margin: 20px 0;
-}
-
-.balance-display {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-}
-
-.message {
-  margin-top: 15px;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-.error {
-  background-color: #ffdddd;
-  color: #d8000c;
-}
-
-.success {
-  background-color: #ddffdd;
-  color: #4F8A10;
+.login-note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #6b7280; // Gris medio
 }
